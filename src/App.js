@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  // Switch, ( changed to 'Routes' in v6 of 'react-router-dom')
+  Routes,
+  Route
+} from "react-router-dom";
+import { useState } from 'react';
+import Admission from './Components/Admission';
+import Query from './Components/Query';
+import Navbar from './Components/Navbar';
+import Copyright from './Components/Copyright';
+import Home from './Components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Navbar />
+        
+        
+          <Routes>
+            <Route path="/" element={<Home  />} />
+            <Route path="/admission" element={<Admission />} />
+            <Route path="/query" element={<Query />} />
+          </Routes>
+      <Copyright />
+      </Router>
   );
 }
 

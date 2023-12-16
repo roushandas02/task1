@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Group elements in pairs on the same line */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input-half {
+    flex: 0.48; /* Adjust the flex value for each element to take half space */
+}
+.input-three {
+    flex: 0.31; /* Adjust the flex value for each element to take one-third space */
+}
+.input-four {
+    flex: 0.23; /* Adjust the flex value for each element to take one-fourth space */
+}
+#address {
+    flex: 0.73;
+}
+
+select {
+    flex: 0.48; /* Adjust the flex value for each element to take half space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input,
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the checkbox label */
+.agreeMsg {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: x-small; /* Adjust the font size as needed */
+    color: #666; /* Lighter color */
+    display: block; /* Ensures the style is applied */
+}
+
+/* Style for the checkbox itself */
+#agree {
+    margin-top: 30px; /* Adjust spacing */
+    width: auto;
+}
+
+/* .file-upload {
+    position: relative;
+    overflow: hidden;
+}
+
+.file-upload input[type=file] {
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.file-upload label {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+} */
+
+#error-message1 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: x-small;
+    color: #ff0000;
+}
+#error-message2 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: x-small;
+    color: #ff0000;
+}
+
+button {
+    background-color: rgb(231, 177, 31);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
